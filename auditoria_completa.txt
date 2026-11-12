@@ -1,0 +1,152 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261112164423
+Nombre de usuario: CONECTARIGUALDA\Alumno
+Usuario RunAs: CONECTARIGUALDA\Alumno
+Nombre de la configuración: 
+Máquina: CONECTARIGUALDA (Microsoft Windows NT 10.0.19045.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 12000
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\Alumno\desktop\auditoria_completa.txt
+PS C:\Users\Alumno> cd $HOME\desktop mkdir sistema_ventas cd sistema_ventas
+PS C:\Users\Alumno> ErrorTerminación(Set-Location): "No se encuentra ningún parámetro de posición que acepte el argumento 'mkdir'."
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento 'mkdir'.
+En línea: 1 Carácter: 1
++ cd $HOME\desktop mkdir sistema_ventas cd sistema_ventas
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : No se encuentra ningún parámetro de posición que acepte el argumento 'mkdir'.
+En línea: 1 Carácter: 1
++ cd $HOME\desktop mkdir sistema_ventas cd sistema_ventas
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Alumno> cd $HOME\desktop
+PS C:\Users\Alumno\desktop> mkdir sistema_ventas
+
+
+    Directorio: C:\Users\Alumno\desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     16:46                sistema_ventas
+
+
+PS C:\Users\Alumno\desktop> cd sistema_ventas
+PS C:\Users\Alumno\desktop\sistema_ventas> mkdir fronted, backend, basedatos
+
+
+    Directorio: C:\Users\Alumno\desktop\sistema_ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     16:47                fronted
+d-----        12/11/2026     16:47                backend
+d-----        12/11/2026     16:47                basedatos
+
+
+PS C:\Users\Alumno\desktop\sistema_ventas> echo "version 1.0 del sistema de ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="version 1.0 del sistema de ventas"
+PS C:\Users\Alumno\desktop\sistema_ventas> git init
+Initialized empty Git repository in C:/Users/Alumno/desktop/sistema_ventas/.git/
+PS C:\Users\Alumno\desktop\sistema_ventas> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\Alumno\desktop\sistema_ventas> git commit -m "dia 1: despliegue de la estructura base"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Alumno\desktop\sistema_ventas> git remote add origin https://github.com/Barby87/Sistema-Ventas.git
+
+PS C:\Users\Alumno\desktop\sistema_ventas> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Barby87/Sistema-Ventas.git'
+PS C:\Users\Alumno\desktop\sistema_ventas> git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+PS C:\Users\Alumno\desktop\sistema_ventas> git commit -m "dia 1: despliegue de la estructura base"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Alumno\desktop\sistema_ventas> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Barby87/Sistema-Ventas.git'
+PS C:\Users\Alumno\desktop\sistema_ventas> git add .
+
+PS C:\Users\Alumno\desktop\sistema_ventas> git commit -m "dia 1: despliegue de la estructura base"
+[main (root-commit) 9a8486c] dia 1: despliegue de la estructura base
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\Alumno\desktop\sistema_ventas> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 71.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Barby87/Sistema-Ventas.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Alumno\desktop\sistema_ventas> echo "conectando al servidor SQL..." > basedatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="conectando al servidor SQL..."
+PS C:\Users\Alumno\desktop\sistema_ventas> echo "actualizacion dia 2: modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="actualizacion dia 2: modulo DB agregado"
+PS C:\Users\Alumno\desktop\sistema_ventas> mkdir pruebas_unitarias
+
+
+    Directorio: C:\Users\Alumno\desktop\sistema_ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     17:03                pruebas_unitarias
+
+
+PS C:\Users\Alumno\desktop\sistema_ventas> git add .
+
+PS C:\Users\Alumno\desktop\sistema_ventas> git commit -m "dia 2: agregados scripts de DB y carpeta de pruebas"
+[main 5aaf6f4] dia 2: agregados scripts de DB y carpeta de pruebas
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 basedatos/conexion.ps1
+PS C:\Users\Alumno\desktop\sistema_ventas> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 514 bytes | 102.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Barby87/Sistema-Ventas.git
+   9a8486c..5aaf6f4  main -> main
+PS C:\Users\Alumno\desktop\sistema_ventas> stop-transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261112170553
+**********************
